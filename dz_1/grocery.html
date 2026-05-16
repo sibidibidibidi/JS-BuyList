@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy List</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
 
+    <div class="appwrapper">
+        <div class="mainsection">
+            <div class="newitemrow">
+                <input type="text" placeholder="Назва товару">
+                <button class="submititembtn" data-tooltip="Додати новий товар">Додати</button>
+            </div>
+            
+            <div class="grocerylist">
+                <div class="groceryrow">
+                    <div class="producttitle ispurchased">Помідори</div>
+                    <div class="quantitymanager">
+                        <span class="amountdisplay inactive">2</span>
+                    </div>
+                    <button class="togglestatebtn" data-tooltip="Скасувати купівлю">Не куплено</button>
+                </div>
+
+                <div class="groceryrow">
+                    <div class="producttitle">Печиво</div>
+                    <div class="quantitymanager">
+                        <button class="roundbtn decreasebtn" data-tooltip="Зменшити ксть">-</button>
+                        <span class="amountdisplay">2</span>
+                        <button class="roundbtn increasebtn" data-tooltip="Збільшити ксть">+</button>
+                    </div>
+                    <button class="togglestatebtn" data-tooltip="Позначити купленим">Куплено</button>
+                    <button class="removeitembtn" data-tooltip="Видалити товар">✖</button>
+                </div>
+
+                <div class="groceryrow">
+                    <div class="producttitle">
+                        <input type="text" class="inlineeditfield" value="Сир">
+                    </div>
+                    <div class="quantitymanager">
+                        <button class="roundbtn decreasebtn" data-tooltip="Зменшити ксть">-</button>
+                        <span class="amountdisplay">1</span>
+                        <button class="roundbtn increasebtn" data-tooltip="Збільшити ксть">+</button>
+                    </div>
+                    <button class="togglestatebtn" data-tooltip="Позначити купленим">Куплено</button>
+                    <button class="removeitembtn" data-tooltip="Видалити товар">✖</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebarstats">
+            <div class="infopanel">
+                <h2>Залишилося</h2>
+                <div class="labelsgroup">
+                    <div class="summarylabel">Печиво <span class="labelcount">2</span></div>
+                    <div class="summarylabel">Сир <span class="labelcount">1</span></div>
+                </div>
+            </div>
+            
+            <div class="infopanel">
+                <h2>Куплено</h2>
+                <div class="labelsgroup">
+                    <div class="summarylabel ispurchased">Помідори <span class="labelcount">2</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="authorstamp">
+        <div class="stampheading">Buy List</div>
+        <div class="stampcreator">Автор:<br>Криса Марія</div>
+    </div>
+
+</body>
+</html>
